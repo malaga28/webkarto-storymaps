@@ -174,3 +174,61 @@ h2 {
   font-size: 1.1em;
   font-weight: normal;
 }
+
+/* Vorher-Nachher Bildvergleich */
+.image-compare {
+ position: relative;
+ width: 100%;
+ overflow: hidden;
+ margin-top: 15px;
+ margin-bottom: 8px;
+}
+/* Unteres Bild bestimmt die Höhe des Vergleichs */
+.image-compare > img {
+ display: block;
+ position: relative !important;
+ top: 0 !important;
+ transform: none !important;
+ width: 100% !important;
+ height: auto !important;
+ max-width: 100% !important;
+ max-height: none !important;
+ margin: 0 !important;
+}
+/* Fenster für das obere Bild */
+.image-compare-after {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 50%;
+ height: 100%;
+ overflow: hidden;
+}
+/* Oberes Bild */
+.image-compare-after img {
+ position: absolute !important;
+ top: 0 !important;
+ left: 0 !important;
+ /* Storymap-Verschiebung ausschalten */
+ transform: none !important;
+ height: 100% !important;
+ width: auto !important;
+ max-height: none !important;
+ max-width: none !important;
+ margin: 0 !important;
+}
+/* Slider */
+.image-compare-slider {
+ display: block;
+ width: 100%;
+ margin: 8px 0 15px 0;
+}
+/*Bildunterschrift*/
+.compare-caption
+{
+ margin:5px 10px 20px 10px;
+ font-size: 9pt;
+ font-style: italic;
+ color: gray;
+ text-align: left;
+}
